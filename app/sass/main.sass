@@ -1,0 +1,194 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.25
+	font-family: $default-font
+	overflow-x: hidden
+	background-color: #fff
+	input, textarea
+		outline: none
+
+.img-r
+	display: block
+	max-width: 100%
+	height: auto
+
+h1, h2, h3, h4, h5, h6
+	font-weight: normal
+
+a:hover
+	text-decoration: none
+	color: initial
+
+a:focus
+	outline: none
+
+button
+	border: none
+	background-color: transparent
+	outline: none
+	&:focus
+		outline: none
+
+.head
+	position: relative
+	min-height: 100vh
+	background-image: url(../img/bg_head.jpg)
+	background-size: cover
+	background-position: center center
+
+.nav
+	padding: $grid-gutter-width/2 0
+	&-logo
+		width: 110px
+	&-descr
+		font-size: 14px
+		color: #fff
+		max-width: 320px
+		padding-left: $grid-gutter-width
+		border-left: 1px solid #fff
+	&-phone
+		float: right
+		&__call
+			display: block
+			font-family: $bold
+			font-size: 18px
+			color: #fff
+			margin-bottom: $grid-gutter-width/4
+			&:hover
+				color: darken(#fff, 20%)
+		&__note
+			display: table
+			margin: 0 auto
+			background-color: $accent
+			color: #1f1f1f
+			padding: 2px
+
+.main
+	height: calc(100vh - 115px - 25px)
+	min-height: 538px
+	&-flex
+		display: flex
+		height: 100%
+		&__container
+			margin: auto
+	&-ttl
+		font-family: $bold
+		font-size: 26px
+		color: #fff
+		text-transform: uppercase
+		margin-bottom: $grid-gutter-width*2
+		text-align: center
+		span
+			display: inline-block
+			padding: 2px 5px
+			margin: 3px 0
+			background-color: $accent
+			color: #1f1f1f
+	&-subttl
+		display: table
+		font-family: $semi
+		font-size: 20px
+		color: #1f1f1f
+		text-transform: uppercase
+		background-color: $accent
+		padding: 5px
+		margin: 0 auto $grid-gutter-width
+	&-list
+		list-style-type: none
+		padding-left: 0
+		margin-bottom: $grid-gutter-width
+		overflow: hidden
+		&__item
+			width: 50%
+			float: left
+			position: relative
+			font-size: 22px
+			padding: 10px 20px
+			margin-bottom: $grid-gutter-width
+			color: #fff
+			&.last-xl
+				margin-bottom: 0
+			i
+				display: block
+				width: 50px
+				height: 50px
+				position: absolute
+				top: 0
+				left: 0
+				border: 1px solid $accent
+				border-right: none
+				border-bottom: none
+				&:before
+					content: ''
+					width: 1px
+					height: 10px
+					background-color: $accent
+					position: absolute
+					top: 0
+					right: 0
+				&:after
+					content: ''
+					height: 1px
+					width: 10px
+					background-color: $accent
+					position: absolute
+					bottom: 0
+					left: 0
+	&-btn
+		position: relative
+		top: 0
+		transition: all ease .3s
+		display: block
+		max-width: 340px
+		background-color: $accent
+		padding: 5px 10px
+		font-family: $bold
+		font-size: 24px
+		text-align: center
+		color: #1f1f1f
+		margin: 0 auto
+		border-radius: 8px
+		border-bottom: 5px solid darken($accent, 15%)
+		span
+			display: block
+			font-size: 12px
+		i
+			display: block
+			width: 30px
+			height: 30px
+			background-image: url(../img/right-arrow.svg)
+			background-size: cover
+			position: absolute
+			top: 14px
+			left: 20px
+			transition: all ease .3s
+		&:hover
+			border-bottom-color: transparent
+			top: 5px
+			i
+				left: 50px
+
+.foot
+	&-txt
+		font-size: 12px
+		text-align: center
+		color: #fff
+	
+
+@import "media" // Always at the end

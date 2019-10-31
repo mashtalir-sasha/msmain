@@ -171,6 +171,7 @@ label.error { display: none !important; }
 .after-submit__title { padding-top: 80px; font-size: 28px; font-weight: bold; margin-bottom: 10px; background: url("img/done.png") no-repeat top center; text-align: center; }
 .after-submit__descr { font-size: 18px; text-align: center; }
 .after-submit__descr a { color: #F23331; text-decoration: underline; }
+.after-submit__link {position: relative; top: 0; -webkit-transition: all ease .3s; -o-transition: all ease .3s; transition: all ease .3s; display: block; background-color: #fbff00; padding: 15px 30px; font-family: Oswald-Bold,sans-serif; font-size: 20px; text-align: center; color: #1f1f1f; margin: 20px auto 0; -webkit-border-radius: 8px; border-radius: 8px; border-bottom: 5px solid #b0b300;}
 
 .test-modal-button { display: block; width: 100%; max-width: 330px; height: 66px; border-radius: 4px; overflow: hidden; border: 0; background: #09B677; font-size: 18px; font-weight: bold; position: relative; cursor: pointer; text-transform: uppercase; color: #FFF; -webkit-transition: .3s; transition: .3s; }
 .test-modal-button:hover { background: #089E67; }

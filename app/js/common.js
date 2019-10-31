@@ -11,4 +11,6 @@ $(function() {
 		$('.main-list__item').matchHeight();
 	}
 
+	document.getElementById('mov').play();
+
 });
